@@ -25,7 +25,7 @@ public class Helloservlet extends HttpServlet{
         ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
         Test test=(Test) context.getBean("test");
         test.say();
-        doPost(request,response);
+     //   doPost(request,response);
     }
 
     @Override

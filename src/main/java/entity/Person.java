@@ -5,25 +5,41 @@ import org.springframework.stereotype.Component;
 @Component
 public class Person {
 
-    private String name;
-    private String sex;
+    private int id;
+    private String firstname;
+    private String deptid;
+    private String dowork;
 
 
-    public Person() {
-        name="wang";
-        sex="man";
+    public int getId() {
+        return id;
     }
 
-    public String getName() {
-        return name;
+    public void setId(int id) {
+        this.id = id;
     }
-    public void setName(String name) {
-        this.name = name;
+
+    public String getFirstname() {
+        return firstname;
     }
-    public String getSex() {
-        return sex;
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
-    public void setSex(String sex) {
-        this.sex = sex;
+
+    public String getDeptid() {
+        return deptid;
+    }
+
+    public void setDeptid(String deptid) {
+        this.deptid = deptid;
+    }
+
+    public String getDowork() {
+        return dowork;
+    }
+
+    public void setDowork(String dowork) {
+        this.dowork = dowork;
     }
 }
