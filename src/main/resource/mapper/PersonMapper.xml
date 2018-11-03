@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.PersonDao">
+    <resultMap id="listPerson" type="entity.Person">
+        <id column="id" property="id" />
+        <result column="firstname" property="firstname" />
+        <result column="deptid" property="deptid" />
+        <result column="dowork" property="dowork" />
+    </resultMap>
+    <select id="getAll" resultMap="listPerson">
+      select  * from  person
+    </select>
+</mapper>
